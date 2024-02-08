@@ -1,5 +1,12 @@
 .avatar-profile-image {
   border-radius: 50%;
   height: 20px;
-  margin-right: var(--spacing-1);
+  margin-right: 8px;
+}
+
+@media only screen and (max-width:700px) {
+  .avatar-profile-image{
+    max-width: 50px;
+  }
+  
 }

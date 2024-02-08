@@ -3,6 +3,7 @@ import './Header.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { FaRedditSquare, FaSearch } from 'react-icons/fa';
 import { setSearchTerm } from '../../store/mainRedditSlice';
+import CurrentSubReddit from '../CurrentSubreddit/CurrentSubreddit';
 
 const Header = () => {
 
@@ -27,7 +28,7 @@ const Header = () => {
             <div className='logo'>
                 <FaRedditSquare className="logo-icon"/>
                 <p>
-                    Daily Reddit
+                    Reddit<span>Daily</span>
                 </p>
             </div>
             <form className='searchBar' onSubmit={onSearchTermSubmit}>
@@ -41,6 +42,9 @@ const Header = () => {
                     <FaSearch/>
                 </button>
             </form>
+            <div className='currentSubReddit'>
+                <CurrentSubReddit/>
+            </div>
         </header>
     );
 };

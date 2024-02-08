@@ -20,7 +20,7 @@ const Home = () => {
 
     useEffect(() => {
       dispatch(fetchPosts(chosenSubreddit));
-    }, [chosenSubreddit]);
+    }, [chosenSubreddit, dispatch]);
 
     const onChangeComments = (index) => {
         const getComments = (permalink) =>{

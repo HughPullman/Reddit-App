@@ -1,18 +1,19 @@
 .comment {
-  background: var(--color-background);
-  margin: var(--spacing-1) 0;
-  padding: var(--spacing-2);
+  background: #49c5b6;
+  margin: 8px 0;
+  padding: 12px;
   transition: box-shadow 0.1s ease-in;
-  border-radius: var(--border-radius);
+  border-radius: 5px;
 }
 
 .comment:hover {
-  box-shadow: var(--box-shadow);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
 }
 
 .comment-metadata {
   display: flex;
-  margin-bottom: var(--spacing-2);
+  margin-bottom: 15px;
   align-items: center;
 }
 
@@ -23,5 +24,5 @@
 
 .comment-author {
   font-weight: bold;
-  color: var(--color-branding);
 }
+

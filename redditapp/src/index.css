@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Prompt';
+    src: local('Prompt'), url('https://fonts.googleapis.com/css2?family=Kanit&family=Prompt&family=Space+Mono&display=swap'), format('woff');
+}
+#root{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: 'Prompt';
+    width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+main{
+    padding-left: 10px;
+    grid-column: 1/3;
+}
+
+header{
+    grid-column: 1/-1;
+    display: grid;
+}
+@media only screen and (max-width: 700px) {
+    #root{
+        grid-template-columns: 1fr;
+    }
+    
+}

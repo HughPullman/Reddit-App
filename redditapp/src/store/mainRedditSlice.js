@@ -6,7 +6,7 @@ const initialState = {
     error: false,
     isLoading: false,
     searchTerm: '',
-    chosenSubreddit: '/r/RandomThoughts/',
+    chosenSubreddit: '/r/photographs/',
   };
 
 const redditSlice = createSlice({
@@ -31,6 +31,9 @@ const redditSlice = createSlice({
       setChosenSubreddit(state, action) {
         state.chosenSubreddit = action.payload;
         state.searchTerm = '';
+      },
+      setCurrentSubreddit(state, action){
+        state.currentSubreddit = action.payload;
       },
       setSearchTerm(state, action) {
         state.searchTerm = action.payload;
@@ -69,6 +72,7 @@ export const {
   getCommentsFailed,
   getCommentsSuccess,
   startGetComments,
+  setCurrentSubreddit,
 } = redditSlice.actions;
 
 export default redditSlice.reducer;
